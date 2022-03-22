@@ -1,7 +1,3 @@
-package com.app.babyapp.data;
-
-import com.app.babyapp.R;
-import com.app.babyapp.model.main.LanguageItem;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -10,19 +6,7 @@ public class LanguagesData {
     /**
      *  **** DO NOT CHANGE ****
      *
-     *     Language Index IDs
-     *
-     *  Those IDs are hardcoded and used in multiple
-     *  sections of Local and Online Database.
-     *
-     *  1. Youtube Videos and Channels
-     *  2. Books
-     *  3. Exercises, Lessons, Profiles
-     *  4. Probably more...
-     *
-     *
-     *  Sort order:
-     *  https://cloud.google.com/translate/docs/languages
+     *     Language Index IDs 
      *
      */
     public final static int AFRIKAANS_LANGUAGE = 0;
@@ -88,8 +72,8 @@ public class LanguagesData {
     public final static int TAMIL_LANGUAGE = 60;
     public final static int TELUGU_LANGUAGE = 61;
     public final static int THAI_LANGUAGE = 62;
-    public final static int TSONGA_LANGUAGE = 63;// ----
-    public final static int TSWANA_LANGUAGE = 64;// ----
+    public final static int TSONGA_LANGUAGE = 63; 
+    public final static int TSWANA_LANGUAGE = 64; 
     public final static int TURKISH_LANGUAGE = 65;
     public final static int UKRAINIAN_LANGUAGE = 66;
     public final static int URDU_LANGUAGE = 67;
@@ -98,7 +82,7 @@ public class LanguagesData {
     public final static int XHOSA_LANGUAGE = 70;
     public final static int YORUBA_LANGUAGE = 71;
     public final static int ZULU_LANGUAGE = 72;
-    public final static int NORWEGIAN_LANGUAGE = 73;// We may have to remove this
+    public final static int NORWEGIAN_LANGUAGE = 73; 
     public final static int AMHARIC_LANGUAGE = 74;
     public final static int CEBUANO_LANGUAGE = 75;
     public final static int CORSICAN_LANGUAGE = 76;
@@ -214,7 +198,7 @@ public class LanguagesData {
     public final static String UNKNOWN_LANGUAGE_CODE = "unk";
     public final static String AFRIKAANS_LANGUAGE_CODE = "af-ZA";
     public final static String ALBANIAN_LANGUAGE_CODE = "sq-AL";
-    public final static String ARABIC_LANGUAGE_CODE = "ar-AE"; //TODO implement all other arabic countries
+    public final static String ARABIC_LANGUAGE_CODE = "ar-AE";  
     public final static String ARMENIAN_LANGUAGE_CODE = "hy-AM";
     public final static String AZERBAIJANI_LANGUAGE_CODE = "az-AZ";
     public final static String BASQUE_LANGUAGE_CODE = "eu-ES";
@@ -361,8 +345,7 @@ public class LanguagesData {
     public final static int XHOSA_LANGUAGE_FLAG = R.drawable.xh;
     public final static int YORUBA_LANGUAGE_FLAG = R.drawable.yo;
     public final static int ZULU_LANGUAGE_FLAG = R.drawable.zu;
-    public final static int NORWEGIAN_LANGUAGE_FLAG = R.drawable.no;
-
+    public final static int NORWEGIAN_LANGUAGE_FLAG = R.drawable.no; 
     public final static int AMHARIC_LANGUAGE_FLAG = R.drawable.am;
     public final static int CEBUANO_LANGUAGE_FLAG = R.drawable.ce;
     public final static int CORSICAN_LANGUAGE_FLAG = R.drawable.co;
@@ -395,50 +378,8 @@ public class LanguagesData {
     public final static int SUNDANESE_LANGUAGE_FLAG = R.drawable.su;
     public final static int TAJIK_LANGUAGE_FLAG = R.drawable.tg;
     public final static int UZBEK_LANGUAGE_FLAG = R.drawable.uz;
-    public final static int YIDDISH_LANGUAGE_FLAG = R.drawable.yi;
-
-
+    public final static int YIDDISH_LANGUAGE_FLAG = R.drawable.yi; 
  
-    public final static String OCR_BLACKLIST = "!@#¦$¶¿ØÞ÷ÉÿǁñȻȼǂǝðþæÊ×ÐÇÀÈÆ¹Á½" +
-            "¼º»¾¸·¯´²±³¨®%^¬`¥&*()\"ɍ√¤˜_)¢∞≡≈↔⇔≠=“…Ãª«∫∮+~:]°€}‘[{'\\|,<.>/;?§ΐ©΄’-";
-
-    public final static String OCR_GREEK_WHITELIST = "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρσςτυφχψωάέήίόύώ";
-    public final static String OCR_ENGLISH_WHITELIST = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-—";
-
-    public final static String OCR_NUMBERS = "0123456789";
-
-
-    public final static ArrayList<Integer> ML_OCR_AVAILABLE_LANGUAGES = new ArrayList<>(Arrays.asList(
-            ENGLISH_LANGUAGE,
-            SPANISH_LANGUAGE,
-            CATALAN_LANGUAGE,
-            DANISH_LANGUAGE,
-            DUTCH_LANGUAGE,
-            FINNISH_LANGUAGE,
-            FRENCH_LANGUAGE,
-            GERMAN_LANGUAGE,
-            HUNGARIAN_LANGUAGE,
-            NORWEGIAN_LANGUAGE,
-            POLISH_LANGUAGE,
-            ROMANIAN_LANGUAGE,
-            SWEDISH_LANGUAGE,
-            TAGALOG_LANGUAGE,
-            TURKISH_LANGUAGE
-    ));
-
-    public final static ArrayList<Integer> textColorList = new ArrayList<>(Arrays.asList(
-            R.color.blue_main_light,
-            R.color.red_lightest,
-            R.color.cyan_light,
-            R.color.pink_extra_light,
-            R.color.brown_lighter,
-            R.color.yellow_light,
-            R.color.brown_light,
-            R.color.header_red_light,
-            R.color.pink_light,
-            R.color.blue_light
-    ));
-
     public static ArrayList<LanguageItem> getLanguages()
     {
         ArrayList<LanguageItem> list = new ArrayList<>();
